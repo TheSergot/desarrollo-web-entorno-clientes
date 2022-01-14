@@ -11,7 +11,7 @@
     return 1;
 }
  
-$number = $_POST['number'];
+$number = $_GET['number'];
 $marcador = primeCheck($number);
 if ($marcador == 1)
     echo "El número ".$number." es primo";
