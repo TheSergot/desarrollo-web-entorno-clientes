@@ -1,9 +1,7 @@
 <h1>¿ES UN N&Uacute;MERO PRIMO?</h1>
 <?php
-// PHP code to check whether a number is prime or Not
-// function to check the number is Prime or Not
 
-function primeCheck($number){
+// Pasamos el valor capturado en el HTML y usamos la función primeCheck para comprobar si el número es primofunction primeCheck($number){
     if ($number == 1)
         return 0;
     for ($i = 2; $i <= $number/2; $i++){
@@ -13,7 +11,6 @@ function primeCheck($number){
     return 1;
 }
  
-// Driver Code
 $number = $_POST['number'];
 $marcador = primeCheck($number);
 if ($marcador == 1)
